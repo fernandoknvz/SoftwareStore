@@ -1,0 +1,41 @@
+html {
+    box-sizing: border-box; /**tamaño de caja - cuadro de caja**/
+    font-size: 62.5%; /** 1 rem = 10 px**/ /**tamaño de fuente**/
+}
+*, *:before, *:after { /**antes, despues**/
+    box-sizing: inherit; /**tamaño de caja - heredar**/
+}
+
+/*contenedor*/
+.contenedor {
+    max-width: 120rem; /**anchura maxima**/
+    width: 90%;  /**ancho**/
+    width: min(90%, 120rem); /**ancho**/
+    margin: 0 auto; /**margen - automatico**/
+}
+
+/*el Header*/
+.header{
+    background-image: url(../img/productos/grafico1.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+a { /** enlace**/
+    text-decoration: none; /**decoración de texto - no**/
+}
+
+/*Barra de Navegación*/
+.barra__navegacion{
+    padding: 2rem;
+}
+
+@media (min-width: 768px) { /**consulta de medios - ancho mínimo**/
+    .barra__navegacion {
+        display: flex; /**pantalla - flexiona**/
+        justify-content: space-between; /**justificar-contenido: espacio-entre**/
+        align-items: center; /**alinear elementos - centro**/
+    }
+}
