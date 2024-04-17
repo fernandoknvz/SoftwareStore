@@ -14,4 +14,5 @@ function validacionProducto(){
 
     console.log('El total a pagar es: $',total);
 
+    
 }
