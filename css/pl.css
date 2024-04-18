@@ -1,0 +1,50 @@
+/* Existing CSS or Bootstrap styles */
+.logo {
+    display: inline-block; /* Hace que el contenedor se comporte como un bloque en línea */
+    text-align: left; /* Alinea el contenido del contenedor a la izquierda */
+    font-size: larger right ;
+
+}
+/* Estilos para los botones de aplicaciones */
+.app-buttons {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.app-button {
+    display: block;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Transición para el agrandamiento */
+}
+
+.app-button img {
+    width: 50px; /* Ajusta el tamaño de la imagen según tu diseño */
+    height: auto; /* Mantiene la proporción */
+}
+/* Estilo de agrandamiento al pasar el mouse */
+.app-button:hover {
+    transform: scale(2.2); /* Aumenta el tamaño al 120% */
+}
+footer {
+    color: lightblue; /* Color del texto */
+    padding: 20px 0; /* Espaciado interno del footer */
+    text-align: center; /* Alineación del texto al centro */
+}
+
+.descripcion-producto,
+    .tallas-disponibles {
+        font-size: 15px; /* Cambia el tamaño de la fuente */
+        line-height: 1.6; /* Ajusta el espaciado entre líneas */
+        text-align: center; /* Alineación del texto al centro */
+        color: white;
+    }
+
+.titulo{
+    text-align: center; /* Alineación del texto al centro */
+    background-color: aqua;
+    color: black;
+    font-size: 15px; /* Cambia el tamaño de la fuente */
+    line-height: 1.6; /* Ajusta el espaciado entre líneas */
+    
+   }

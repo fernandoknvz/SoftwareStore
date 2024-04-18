@@ -14,17 +14,17 @@
         <header class="grid__header imagen__header">
            
                 <div class="flex__logo1">
-                    <a class="diseno__software" href="#">
+                    <a class="diseno__software" href="index.html">
                         <h1>Software<span>Store</span></h1>
                     </a>
                 </div>
                 
                 <div class="flex__logo2">
                     <nav class="flex__nav">
-                        <a class="diseno__a" href="#">Inicio</a>                    
-                        <a class="diseno__a" href="#">Productos</a>
-                        <a class="diseno__a" href="#">Cuenta</a>
-                        <a class="diseno__a" href="#">Nosotros</a>
+                        <a class="diseno__a" href="index.html">Inicio</a>                    
+                        <a class="diseno__a" href="pl.html">Productos</a>
+                        <a class="diseno__a" href="fr.html">Cuenta</a>
+                        <a class="diseno__a" href="dv.html">Nosotros</a>
                     </nav>
                 </div>
                
@@ -41,25 +41,42 @@
 
                 <div class="contenido__producto">
                     <p class="parrafo__contenido">Quisque at mi sit amet leo aliquet laoreet. Pellentesque rutrum, augue consequat bibendum lacinia, erat nulla ultricies lorem, Quisque at mi sit amet leo aliquet laoreet.</p>
-                    <form class="formulario" onsubmit="validacionProducto()">
-                        <select id="valor_talla" class="formulario__campo">
-                            <option disabled selected>--Seleccionar Talla--</option>
-                            <option value="25000">Talla S $25.000</option>
-                            <option value="25000">Talla M $25.000</option>
-                            <option value="25000">Talla L $25.000</option>
-                            <option value="25000">Talla XL $25.000</option>
-                        </select>
-                        <input id="cantidad" class="formulario__campo" type="number" placeholder="cantidad" min="1">
-                        <input onclick="validacionProducto()"  class="formulario__submit" type="submit" value="agregar al carrito">
+                    <form class="formulario" >
+                        <label class="formulario__campo" for="cantidad">Ingrese Cantidad</label>
+                        <input id="cantidad" type="number">
+                        <button class="formulario__submit" onclick="validacionCantidad()">Ingrese al Carrito</button>
+<!--
+                        <label class="formulario__campo" for="cantidad">Ingrese Cantidad</label>
+                        <input id="cantidad" type="number" min="1">
+                         <input id="total" onclick="validacionProducto()" class="formulario__submit" type="submit" value="agregar al carrito"> -->
                     </form>
                 </div>
             </div>
 
         </main>
         
+        <!-- footer -->
+        <header class="grid__header imagen__header margin__dv">
+           
+            <div class="flex__logo1">
+                <a class="diseno__software" href="#">
+                    <h1>Software<span>Store</span></h1>
+                </a>
+            </div>
+            
+            <div class="flex__logo2">
+                <nav class="flex__nav">
+                    <a class="diseno__a" href="index.html">Inicio</a>                    
+                    <a class="diseno__a" href="pl.html">Productos</a>
+                    <a class="diseno__a" href="fr.html">Cuenta</a>
+                    <a class="diseno__a" href="dv.html">Nosotros</a>
+                </nav>
+            </div>
+           
+        </header>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="./validacion_producto.js"></script>
+    <script src='./validacion_producto.js'></script>
 </body>
 </html>

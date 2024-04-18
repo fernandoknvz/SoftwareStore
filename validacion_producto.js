@@ -1,18 +1,15 @@
-function validacionProducto(){
-    //declaro variables a utilizar
-    let valor_talla;
-    let cantidad;
-    let total;
+function validacionCantidad(){
+    let cantidad = document.getElementById('cantidad').Value;
 
-    //obtengo la informacion
-    valor_talla = document.getElementById('valor_talla').value;
-    cantidad = document.getElementById('cantidad').value;
-    valor_talla = parseInt(valor_talla);
+
     cantidad = parseInt(cantidad);
 
-    total = valor_talla * cantidad;
+    if (cantidad <= 0){
+        alert("La cantidad debe ser mayor que cero.");
+        return false; // Indica que la validación ha fallado
+    }
 
-    console.log('El total a pagar es: $',total);
+    alert("Agregado Exitosamente!");
 
-    
+    return true;
 }

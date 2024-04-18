@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="css/fr.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario_Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <header class="grid__header imagen__header">
+           
+        <div class="flex__logo1">
+            <a class="diseno__software" href="#">
+                <h1>Software<span>Store</span></h1>
+            </a>
+        </div>
+        
+        <div class="flex__logo2">
+            <nav class="flex__nav">
+                <a class="diseno__a" href="index.html">Inicio</a>                    
+                <a class="diseno__a" href="pl.html">Productos</a>
+                <a class="diseno__a" href="fr.html">Cuenta</a>
+                <a class="diseno__a" href="dv.html">Nosotros</a>
+            </nav>
+        </div>
+       
+    </header>
+    
+
+    <div class="container-xl text-center">
+        <h1>Iniciar sesión</h1>
+        <form class="row g-3 needs-validation" style="justify-content: center;" novalidate>
+            <div class="col col-12 col-sm-12 col-md-12">
+                <label for="inputUsuario" class="form-label">Usuario</label>
+                <input type="text" class="form-control w-100 mb-3" id="inputUsuario" placeholder="" value="" required>
+                <span class="invalid-feedback"></span>
+                <br>
+                <label for="inputPassword" class="form-label">Contraseña</label>
+                <input type="password" class="form-control w-100 mb-3" id="inputPassword" placeholder="" value="" required>
+                <span class="invalid-feedback"></span>
+                <br>
+                <a class="pass" href="#">¿Olvidó su contraseña?</a>
+                <br>
+                <br>
+                <button type="button"  onclick="obtDatosDeSesion()" >Entrar</button>
+                <script src="iniciarSesion.js"></script>
+            </div>
+            <div class="signup_link">¿Estás Registrado?
+                <a href="#">Registrate Aqui</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
