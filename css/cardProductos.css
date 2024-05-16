@@ -1,0 +1,19 @@
+.grid__card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.grid__card div{
+    text-align: center;
+}
+
+.productos{
+    text-align: center;
+    margin: 5rem;
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+}

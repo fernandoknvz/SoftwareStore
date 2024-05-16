@@ -57,3 +57,12 @@
     text-align: end;
     margin-top: 2rem;
 }
+
+/**Titulo de formulaerio**/
+.titulo__formulario{
+    text-align: center;
+    margin: 5rem;
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+}

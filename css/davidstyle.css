@@ -1,0 +1,124 @@
+.title-spacing {
+    margin-bottom: 10px; /* Corrige el espacio, sin espacio entre número y unidad */
+    padding: 3%;
+}
+
+#carouselExampleAutoplaying {
+    margin-bottom: 1%;
+    height: 500px; /* Altura fija para todo el carrusel */
+}
+
+.carousel-item {
+    width: 100%; /* Asegura que cada elemento del carrusel ocupe todo el ancho disponible */
+    height: 500px; /* Altura fija para cada elemento del carrusel */
+    display: flex; /* Usa flexbox para alinear las imágenes correctamente */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+}
+
+.carousel-item img {
+    max-width: 100%; /* Máximo ancho permitido sin exceder el contenedor */
+    max-height: 100%; /* Máximo altura permitida sin exceder el contenedor */
+    object-fit: cover; /* Cubre el área asignada sin deformar la imagen */
+}
+
+.store-description {
+    text-align: justify; /* Justifica el texto para que esté alineado desde el inicio y al final horizontalmente */
+    max-width: 80%; /* Ancho máximo para una mejor lectura */
+    flex-direction: column; /* Orientación vertical de los elementos internos */
+    align-items: flex-start; /* Alinea elementos desde el inicio horizontalmente */
+    margin: 20px auto; /* Margen arriba y abajo, centrado horizontal */
+    line-height: 1.6; /* Espacio entre líneas para mayor legibilidad */
+    font-size: 16px; /* Tamaño de fuente adecuado */
+    color: black; /* Color de texto */
+}
+.store-description h3 {
+    text-align: center; /* Alineación central del título */
+    color: black; /* Mantén el color del texto para consistencia */
+    width: 100%; /* Asegura que el h3 pueda centrarse adecuadamente */
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: black; /* Fondo negro para mayor visibilidad */
+    width: 70px; /* Anchura visible de los iconos de control */
+    height: 100px; /* Altura extensa para facilitar la interacción */
+}
+
+/* Media queries para adaptar los estilos a diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 50px; /* Reduce el tamaño de los iconos en pantallas más pequeñas */
+        height: 50px;
+    }
+
+    .store-description {
+        font-size: 14px; /* Reduce el tamaño de la fuente para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .store-description {
+        max-width: 95%; /* Aumenta el ancho máximo para aprovechar mejor el espacio en pantallas muy pequeñas */
+    }
+
+    .title-spacing {
+        padding: 5%; /* Aumenta el padding para mejor manejo del espacio */
+    }
+}
+/* Posicionamiento específico para la flecha izquierda */
+.carousel-control-prev {
+    left: 10px; /* Distancia del lado izquierdo */
+}
+
+/* Posicionamiento específico para la flecha derecha */
+.carousel-control-next {
+    right: 10px; /* Distancia del lado derecho */
+}
+
+/**TOAST**/
+.toast {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .toast-header {
+    background-color: #444;
+    color: #fff;
+  }
+
+  .toast-header img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
+
+  .toast-body {
+    font-size: 16px;
+  }
+
+  @media (max-width: 768px) {
+    .toast-container {
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .toast-header img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .toast-body {
+      font-size: 14px;
+    }
+  }
+
+  /*titulo**/
+  .titulo__h1{
+    text-align: center;
+    margin: 5rem;
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+  }
