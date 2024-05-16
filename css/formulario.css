@@ -11,6 +11,12 @@
         margin-bottom: 6rem;
     }
 }
+@media (max-width:440px ) {
+    .max__div{
+        width: 100%;
+    }
+}
+
 
 .formulario{
     display: block;

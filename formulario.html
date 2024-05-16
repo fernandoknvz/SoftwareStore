@@ -34,76 +34,79 @@
         </header>
         <!-- barra de navegacion principal FINAL -->
         
-
-        <!-- INICIO DEL MAIN -->
-        <section>
-            <!--Mensaje alerta-->
+        <!--Mensaje alerta-->
         <div class="alert alert-primary auto-dismiss" role="alert">
             Cuida tus datos personales!
         </div>
 
+        <!-- INICIO DEL MAIN -->
+        <section class="container">
             <h1 class="titulo__formulario">Formulario de contacto</h1>
-            <Form id="contactForm" class="formulario">
-                <div class="div__formulario">
-                    <h2>CONTÁCTANOS</h2>
-                    <div class="grid__label__input">
-                        <div class="div__label__input">
-                            <label for="nombre">Nombre: </Label>
-                            <input id="nombre" type="text" required>
+
+            <div class="max__div">
+                <Form id="contactForm" class="formulario">
+                    <div class="div__formulario">
+                        <h2>CONTÁCTANOS</h2>
+                        <div class="grid__label__input">
+                            <div class="div__label__input">
+                                <label for="nombre">Nombre: </Label>
+                                <input id="nombre" type="text" required>
+                            </div>
+                            
+                            <div class="div__label__input">
+                                <label for="apellido">Apellido: </label>
+                                <input id="apellido" type="text" required>
+                            </div>
+                            
+                            <div class="div__label__input">
+                                <label for="edad">Edad: </label>
+                                <input id="edad" type="number" min="18" max="120" required>
+                            </div>
+                            
+                            <div class="div__label__input">
+                                <label for="email">E-mail: </label>
+                                <input id="email" type="email" required>
+                            </div>
+                           
+                            <div class="div__label__input">
+                                <label for="ciudad">Ciudad: </label>
+                                <input id="ciudad" type="text" required>
+                            </div>
+        
+                            <div class="div__label__input">
+                                <label for="comuna">Comuna: </label>
+                                <input id="comuna" type="text" required>
+                            </div>
+        
+                            <div class="div__label__input">
+                                <label for="telefono">N° Contacto: </label>
+                                <input id="telefono" type="tel" required minlength="12" maxlength="12" value="+56">
+                            </div>
+        
+                            <div class="div__label__input">
+                                <label for="motivo">Motivo:</label>
+                                <select name="motivo" id="motivo" required>
+                                    <option disabled selected value="">--Seleccione una opción--</option>
+                                    <option value="reclamo">Reclamo</option>
+                                    <option value="consulta">Consulta</option>
+                                    <option value="cotizacion">Cotización</option>
+                                    <option value="otra">Otra</option>
+                                </select>
+                            </div>
+        
+                            <textarea name="mensaje" id="mensaje" maxlength="100" placeholder="Ingrese su mensaje..." required></textarea>
+                          
                         </div>
                         
-                        <div class="div__label__input">
-                            <label for="apellido">Apellido: </label>
-                            <input id="apellido" type="text" required>
+                        <div class="div__button">
+                            <button type="button" class="btn btn-outline-info" id="limpiarBtn">Limpiar</button>
+                            <button type="submit" class="btn btn-outline-light">Enviar</button>
                         </div>
                         
-                        <div class="div__label__input">
-                            <label for="edad">Edad: </label>
-                            <input id="edad" type="number" min="18" max="120" required>
-                        </div>
-                        
-                        <div class="div__label__input">
-                            <label for="email">E-mail: </label>
-                            <input id="email" type="email" required>
-                        </div>
-                       
-                        <div class="div__label__input">
-                            <label for="ciudad">Ciudad: </label>
-                            <input id="ciudad" type="text" required>
-                        </div>
-    
-                        <div class="div__label__input">
-                            <label for="comuna">Comuna: </label>
-                            <input id="comuna" type="text" required>
-                        </div>
-    
-                        <div class="div__label__input">
-                            <label for="telefono">N° Contacto: </label>
-                            <input id="telefono" type="tel" required minlength="12" maxlength="12" value="+56">
-                        </div>
-    
-                        <div class="div__label__input">
-                            <label for="motivo">Motivo:</label>
-                            <select name="motivo" id="motivo" required>
-                                <option disabled selected value="">--Seleccione una opción--</option>
-                                <option value="reclamo">Reclamo</option>
-                                <option value="consulta">Consulta</option>
-                                <option value="cotizacion">Cotización</option>
-                                <option value="otra">Otra</option>
-                            </select>
-                        </div>
-    
-                        <textarea name="mensaje" id="mensaje" maxlength="100" placeholder="Ingrese su mensaje..." required></textarea>
-                      
                     </div>
-                    
-                    <div class="div__button">
-                        <button type="button" class="btn btn-outline-info" id="limpiarBtn">Limpiar</button>
-                        <button type="submit" class="btn btn-outline-light">Enviar</button>
-                    </div>
-                    
-                </div>
-            </Form>
+                </Form>
+            </div>
+            
     
             <div id="mensajeEnviado" style="display: none;">
                 <p>¡Mensaje enviado exitosamente!</p>
