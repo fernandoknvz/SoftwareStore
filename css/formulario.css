@@ -1,12 +1,22 @@
+
+
 /*Formulario*/
-.formulario{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 1rem;
-    grid-template-rows: none;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+@media (min-width: 440px) {
+    .formulario{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 1rem;
+        grid-template-rows: none;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
 }
+
+.formulario{
+    display: block;
+    width: 100%;
+}
+
 
 .div__formulario{
     grid-column: 2/3;
@@ -24,17 +34,21 @@
     font-weight: bold;
 }
 
-.grid__label__input{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+@media (min-width: 440px) {
+    .grid__label__input{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
 }
+
 
 .grid__label__input label{
     color: aliceblue;
     font-weight: bold;
     font-size: 1rem;
 }
+
 
 .grid__label__input input{
     appearance: none;
