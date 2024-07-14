@@ -1,0 +1,25 @@
+<!-- usuarios/templates/usuarios/editar_perfil.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div style="text-align: center;">
+    <h2 class="h2__iniciar">Iniciar sesion</h2>
+    <div class="form__poleras-container">
+        <form class="form__poleras" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+        <button class="botton__agregar2" type="submit">Iniciar</button>
+        <a href="">No tienes cuenta? crea una aquí</a>
+        </form>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}

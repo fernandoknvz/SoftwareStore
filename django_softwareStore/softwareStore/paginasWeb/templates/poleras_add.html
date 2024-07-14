@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div style="text-align: center;">
+    <h2 class="h2__poleras">Formulario Para Agregar Poleras</h2>
+    <div class="form__poleras-container">
+        <form class="form__poleras" action="{% url 'polerasAdd' %}" method="post">
+            {% csrf_token %}
+            <div class="form__group">
+                <label class="form__label" for="id_polera">Id Polera:</label>
+                <input class="form__input" type="number" name="id_polera" id="id_polera">
+            </div>
+            <div class="form__group">
+                <label class="form__label" for="nombre_polera">Nombre Polera:</label>
+                <input class="form__input" type="text" name="nombre_polera" id="nombre_polera">
+            </div>
+            <div class="form__group">
+                <label class="form__label" for="talla_polera">Talla Polera:</label>
+                <input class="form__input" type="text" name="talla_polera" id="talla_polera">
+            </div>
+            <div class="form__group">
+                <label class="form__label" for="precio_polera">Precio Polera:</label>
+                <input class="form__input" type="number" name="precio_polera" id="precio_polera">
+            </div>
+            <input class="botton__agregar2" type="submit" name="opcion" value="Agregar">
+        </form>
+    </div>
+    <a class="botton__volver" href="{% url 'crud' %}">Volver</a>
+    <br>
+    <div id="idMensajes">
+        {% if mensaje %}
+        {{mensaje}}
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}
+

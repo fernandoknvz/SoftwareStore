@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div style="text-align: center;">
+    <h2 class="h2__poleras">Formulario Para Modificar Poleras</h2>
+    <div class="form__poleras-container">
+        <form class="form__poleras" action="{% url 'poleras_edit' pk=polera.id_polera %}" method="post">
+            {% csrf_token %}
+            <div class="form__group">
+                <label class="form__label" for="id_polera">Id Polera:</label>
+                <input class="form__input" type="text" name="id_polera" id="id_polera" value="{{ polera.id_polera }}" readonly>
+            </div>
+            <div class="form__group">
+                <label class="form__label" for="nombre_polera">Nombre Polera:</label>
+                <input class="form__input" type="text" name="nombre_polera" id="nombre_polera" value="{{ polera.nombre }}">
+            </div>
+            <div class="form__group">
+                <label class="form__label" for="talla_polera">Talla Polera:</label>
+                <input class="form__input" type="text" name="talla_polera" id="talla_polera" value="{{ polera.talla }}">
+            </div>
+            <div class="form__group">
+                <label class="form__label" for="precio_polera">Precio Polera:</label>
+                <input class="form__input" type="number" name="precio_polera" id="precio_polera" value="{{ polera.precio }}">
+            </div>
+            <input class="botton__agregar2" type="submit" name="opcion" value="Modificar">
+        </form>
+    </div>
+    <a class="botton__volver" href="{% url 'crud' %}">Volver</a>
+    <br>
+    <div id="idMensajes">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}

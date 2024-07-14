@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Contenido Principal -->
+<main class="container">
+    <h1 class="nombre__producto">React JS $25.000</h1>
+
+    <div class="grid__producto">
+        <img class="img__producto" src="{% static 'img/productos/1.jpg' %}" alt="imagen_producto">
+
+        <div class="contenido__producto">
+            <p class="parrafo__contenido">Quisque at mi sit amet leo aliquet laoreet. Pellentesque rutrum, augue consequat bibendum lacinia, erat nulla ultricies lorem, Quisque at mi sit amet leo aliquet laoreet.</p>
+            <form class="formulario">
+                <label class="formulario__campo" for="cantidad">Ingrese Cantidad</label>
+                <input class="formulario__submit" id="cantidad" type="number">
+                <button type="button" class="formulario__submit" onclick="validacionCantidad(event)">Ingrese al Carrito</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+{% endblock %}

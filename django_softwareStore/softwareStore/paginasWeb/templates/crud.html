@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block content %}
+    <main>
+        <h2 class="titulo__crud">Menú Para el CRUD</h2>
+
+        <button class="botton__agregar" type="button">
+            <a  href="{% url 'polerasAdd' %}">Agregar</a>
+        </button>
+
+        <div id="idMensajes">
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Talla</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for polera in poleras %}
+                <tr>
+                    <td>{{ polera.id_polera }}</td>
+                    <td>{{ polera.nombre }}</td>
+                    <td>{{ polera.talla }}</td>
+                    <td>{{ polera.precio }}</td>
+                    <td>
+                        <form method="post" action="{% url 'poleras_delete' pk=polera.id_polera %}">
+                            {% csrf_token %}
+                            <button class="botton__eliminar" type="submit">Eliminar</button>
+                            <a class="botton__modificar" href="{% url 'poleras_edit' pk=polera.id_polera %}">Modificar</a>
+                        </form>
+                       
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </main>
+
+    <script>
+        $(document).ready(function(){
+            $("#idMensajes").delay(2000).fadeOut("slow");
+        });
+    </script>
+
+{% endblock %}
+

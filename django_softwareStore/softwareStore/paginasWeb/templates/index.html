@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<h3 class="titulo__developer">Conoce Nuestra Tienda Developer</h3>
+
+        <main class="container">
+            
+            <article class="grid__article">
+                <div class="">
+                    <picture>
+                        <source loading="lazy" srcset="img/productos/grafico1.webp" type="imagen/webp"">
+                        <img class="imagen__responsive" src="{% static 'img/productos/grafico1.jpg' %}" alt="imagen pagina principal">
+                    </picture>
+                </div>
+        
+                <div class="descripcion">
+                    <h3>Tipos de diseños para Tí</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quas, aut quisquam temporibus excepturi a sint, pariatur expedita, et laudantium quibusdam! Sint, vel! Accusamus natus quidem sapiente nobis quod? Voluptatum, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quas, aut quisquam temporibus excepturi a sint, pariatur expedita, et laudantium quibusdam! Sint, vel! Accusamus natus quidem sapiente nobis quod? Voluptatum?</p>
+        
+                    <a class="diseño__botton" href="{% url 'nosotros' %}">Conoce Más</a>
+                </div>
+            </article>
+        </main>
+
+        <main class="container separacion__main2">
+            <article class="grid__article">
+                <div class="posicion__img2">
+                    <picture>
+                        <source loading="lazy" srcset="img/productos/grafico1.webp" type="imagen/webp"">
+                        <img class="imagen__responsive" src="{% static 'img/productos/grafico2.jpg' %}" alt="imagen pagina principal">
+                    </picture>
+                </div>
+        
+                <div class="descripcion posicion__texto2">
+                    <h3>Tipos de diseños para Tí</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quas, aut quisquam temporibus excepturi a sint, pariatur expedita, et laudantium quibusdam! Sint, vel! Accusamus natus quidem sapiente nobis quod? Voluptatum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quas, aut quisquam temporibus excepturi a sint, pariatur expedita, et laudantium quibusdam! Sint, vel! Accusamus natus quidem sapiente nobis quod? Voluptatum?</p>
+        
+                    <a class="diseño__botton" href="nosotros.html">Conoce Más</a>
+                </div>
+            </article>
+        </main>
+{% endblock %}

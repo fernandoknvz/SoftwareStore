@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<main>
+          <div class="col text-center">
+            <h1 class="text-h1 title-spacing titulo__h1">"Nuestra Historia: Tejiendo Programación en Cada Polera"</h1>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="{% static 'img/oferta2.jpg' %}" class="d-block mx-auto my-auto custom-img-size" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static 'img/oferta6.jpg' %}" class="d-block mx-auto my-auto custom-img-size"   alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static 'img/oferta5.jpg' %}" class="d-block mx-auto my-auto custom-img-size" alt="...">
+                </div>
+            </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+              <!-- Agregar descripción de la tienda debajo del carrusel -->
+    <div class="store-description mt-4">
+        <h3>SoftwareStore: La Moda para Programadores</h3>
+        <p>En un animado hackathon, nació SoftwareStore de la idea de cuatro amigos estudiantes, Que buscaban una manera de llevar su pasión por la programación más allá del código, creando poleras que resonaran con entusiastas del software como ellos. Paloma, la diseñadora, y Fernando, el desarrollador, junto con el apoyo de Francisca y David, convirtieron su visión en una marca que hoy simboliza la unión entre tecnología y estilo personal. Cada diseño no solo es un reflejo de la cultura geek, sino también un punto de encuentro para una comunidad que celebra su identidad programadora con orgullo. SoftwareStore continúa su expansión, inspirando y conectando a geeks de todo el mundo.</p>
+    </div>
+</main>
+
+{% endblock %}
